@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <!-- zona de chat -->
+        <section id="zona-de-chat" aria-label="zona de chat">
+
+            <div class="bienvenida">
+                <div class="icono-viaje">✈</div>
+                <h1>¡Hola! Soy tu agente de viajes</h1>
+                <p>¿A dónde te gustaría viajar?</p>
+                <span>Contame tu idea y te ayudo a organizarla.</span>
+            </div>
+
+            <div id="mensajes" class="mensajes" aria-live="polite">
+            </div>
+
+        </section>
+
+        <!-- zona de escritura -->
+        <form id="zona-de-escritura" aria-label="zona de escritura">
+
+            <textarea
+                id="mensaje"
+                placeholder="Escribí tu mensaje..."
+                maxlength="500"
+                rows="1"
+                aria-label="Escribí tu mensaje"
+                required
+            ></textarea>
+
+            <div class="barra-inferior">
+                <span>Máximo 500 caracteres</span>
+                <button type="submit" id="enviar">
+                    Enviar <span>➤</span>
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
